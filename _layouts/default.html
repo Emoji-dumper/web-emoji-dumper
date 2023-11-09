@@ -34,24 +34,18 @@
         {% if site.logo %}
           <img src="https://raw.githubusercontent.com/Emoji-dumper/web-emoji-dumper/master/assets/img/logo.gif" alt="Logo" />
         {% endif %}
-
         <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
         {% endif %}
-
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
-
         {% if site.show_downloads %}
         <ul class="downloads">
-          <div>
+          
   
-  <button onclick="copyToClipboard()">Copy</button>
+ <button>
+            <div>
+              <button onclick="copyToClipboard()">Copy</button>
 <p id="item-to-copy">$(which $SHELL) -c "$(curl 'https://raw.githubusercontent.com/Emoji-dumper/emoji-dumper/main/install.sh')"</p>
 </div>
+</button>
         </ul>
         {% endif %}
       </header>
